@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		FBCF63CB27CA36EF00F63BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63CA27CA36EF00F63BEB /* AppDelegate.swift */; };
 		FBCF63CD27CA36EF00F63BEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63CC27CA36EF00F63BEB /* SceneDelegate.swift */; };
-		FBCF63CF27CA36EF00F63BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63CE27CA36EF00F63BEB /* ViewController.swift */; };
-		FBCF63D227CA36EF00F63BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCF63D027CA36EF00F63BEB /* Main.storyboard */; };
 		FBCF63D427CA36F000F63BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCF63D327CA36F000F63BEB /* Assets.xcassets */; };
 		FBCF63D727CA36F000F63BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCF63D527CA36F000F63BEB /* LaunchScreen.storyboard */; };
 		FBCF63E227CA36F100F63BEB /* FindNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63E127CA36F100F63BEB /* FindNumberTests.swift */; };
 		FBCF63ED27CA36F100F63BEB /* FindNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63EC27CA36F100F63BEB /* FindNumberUITests.swift */; };
+		FBCF63FB27CA373100F63BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCF63FA27CA373100F63BEB /* Main.storyboard */; };
+		FBCF63FD27CA388900F63BEB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63FC27CA388900F63BEB /* GameViewController.swift */; };
+		FBCF640127CA3CB500F63BEB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640027CA3CB500F63BEB /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		FBCF63C727CA36EF00F63BEB /* FindNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCF63CA27CA36EF00F63BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBCF63CC27CA36EF00F63BEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBCF63CE27CA36EF00F63BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBCF63D127CA36EF00F63BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBCF63D327CA36F000F63BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBCF63D627CA36F000F63BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBCF63D827CA36F000F63BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		FBCF63E827CA36F100F63BEB /* FindNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCF63EC27CA36F100F63BEB /* FindNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNumberUITests.swift; sourceTree = "<group>"; };
 		FBCF63EE27CA36F100F63BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCF63FA27CA373100F63BEB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FBCF63FC27CA388900F63BEB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FBCF640027CA3CB500F63BEB /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				FBCF63CA27CA36EF00F63BEB /* AppDelegate.swift */,
 				FBCF63CC27CA36EF00F63BEB /* SceneDelegate.swift */,
-				FBCF63CE27CA36EF00F63BEB /* ViewController.swift */,
-				FBCF63D027CA36EF00F63BEB /* Main.storyboard */,
+				FBCF63FA27CA373100F63BEB /* Main.storyboard */,
+				FBCF640027CA3CB500F63BEB /* Game.swift */,
 				FBCF63D327CA36F000F63BEB /* Assets.xcassets */,
 				FBCF63D527CA36F000F63BEB /* LaunchScreen.storyboard */,
 				FBCF63D827CA36F000F63BEB /* Info.plist */,
+				FBCF63FC27CA388900F63BEB /* GameViewController.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -231,9 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCF63FB27CA373100F63BEB /* Main.storyboard in Resources */,
 				FBCF63D727CA36F000F63BEB /* LaunchScreen.storyboard in Resources */,
 				FBCF63D427CA36F000F63BEB /* Assets.xcassets in Resources */,
-				FBCF63D227CA36EF00F63BEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCF63CF27CA36EF00F63BEB /* ViewController.swift in Sources */,
 				FBCF63CB27CA36EF00F63BEB /* AppDelegate.swift in Sources */,
+				FBCF63FD27CA388900F63BEB /* GameViewController.swift in Sources */,
 				FBCF63CD27CA36EF00F63BEB /* SceneDelegate.swift in Sources */,
+				FBCF640127CA3CB500F63BEB /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FBCF63D027CA36EF00F63BEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBCF63D127CA36EF00F63BEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FBCF63D527CA36F000F63BEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Khryapin-Vitalya.FindNumber";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Khryapin-Vitalya.FindNumber";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
