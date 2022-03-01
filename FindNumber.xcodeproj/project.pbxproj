@@ -20,6 +20,8 @@
 		FBCF640527CCFB1300F63BEB /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640427CCFB1300F63BEB /* SettingsTableViewController.swift */; };
 		FBCF640727CD075900F63BEB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640627CD075900F63BEB /* Settings.swift */; };
 		FBCF640927CE1A4400F63BEB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640827CE1A4400F63BEB /* RecordViewController.swift */; };
+		FBCF640D27CE562500F63BEB /* PreviewSecond.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCF640C27CE562500F63BEB /* PreviewSecond.png */; };
+		FBCF640F27CE564B00F63BEB /* PreviewFirst.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCF640E27CE564B00F63BEB /* PreviewFirst.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		FBCF640427CCFB1300F63BEB /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FBCF640627CD075900F63BEB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FBCF640827CE1A4400F63BEB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		FBCF640C27CE562500F63BEB /* PreviewSecond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviewSecond.png; sourceTree = "<group>"; };
+		FBCF640E27CE564B00F63BEB /* PreviewFirst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviewFirst.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				FBCF63D327CA36F000F63BEB /* Assets.xcassets */,
 				FBCF63D527CA36F000F63BEB /* LaunchScreen.storyboard */,
 				FBCF63D827CA36F000F63BEB /* Info.plist */,
+				FBCF640E27CE564B00F63BEB /* PreviewFirst.png */,
+				FBCF640C27CE562500F63BEB /* PreviewSecond.png */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -248,7 +254,9 @@
 			files = (
 				FBCF63FB27CA373100F63BEB /* Main.storyboard in Resources */,
 				FBCF63D727CA36F000F63BEB /* LaunchScreen.storyboard in Resources */,
+				FBCF640D27CE562500F63BEB /* PreviewSecond.png in Resources */,
 				FBCF63D427CA36F000F63BEB /* Assets.xcassets in Resources */,
+				FBCF640F27CE564B00F63BEB /* PreviewFirst.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
