@@ -48,6 +48,7 @@ class GameViewController: UIViewController {
             buttons[index].setTitle(game.items[index].title, for: .normal)
             buttons[index].alpha = 1
             buttons[index].isEnabled = true
+            buttons[index].layer.cornerRadius = 25
         }
         nextDigit.text = game.nexItem?.title
         if !Settings.shared.currentSettings.timerState {
@@ -63,7 +64,7 @@ class GameViewController: UIViewController {
                 UIView.animate(withDuration: 0.3) { [weak self] in
                     self?.buttons[index].backgroundColor = .systemRed
                 } completion: { [weak self] (_) in
-                    self?.buttons[index].backgroundColor = .white
+                    self?.buttons[index].backgroundColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
                     self?.game.items[index].isError = false
                 }
             }
@@ -80,7 +81,7 @@ class GameViewController: UIViewController {
             newGameButton.isHidden = true
         case .win:
             statusLabel.text = "Вы выиграли!"
-            statusLabel.textColor = .green
+            statusLabel.textColor = #colorLiteral(red: 0, green: 0.5603182912, blue: 0, alpha: 1)
             newGameButton.isHidden = false
             if game.isNewRecord {
                 showAlert()
