@@ -16,6 +16,10 @@
 		FBCF63FB27CA373100F63BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCF63FA27CA373100F63BEB /* Main.storyboard */; };
 		FBCF63FD27CA388900F63BEB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF63FC27CA388900F63BEB /* GameViewController.swift */; };
 		FBCF640127CA3CB500F63BEB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640027CA3CB500F63BEB /* Game.swift */; };
+		FBCF640327CCFAEE00F63BEB /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640227CCFAEE00F63BEB /* SelectTimeViewController.swift */; };
+		FBCF640527CCFB1300F63BEB /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640427CCFB1300F63BEB /* SettingsTableViewController.swift */; };
+		FBCF640727CD075900F63BEB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640627CD075900F63BEB /* Settings.swift */; };
+		FBCF640927CE1A4400F63BEB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF640827CE1A4400F63BEB /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		FBCF63FA27CA373100F63BEB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FBCF63FC27CA388900F63BEB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FBCF640027CA3CB500F63BEB /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FBCF640227CCFAEE00F63BEB /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		FBCF640427CCFB1300F63BEB /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		FBCF640627CD075900F63BEB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FBCF640827CE1A4400F63BEB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,18 @@
 		FBCF63C927CA36EF00F63BEB /* FindNumber */ = {
 			isa = PBXGroup;
 			children = (
+				FBCF63FA27CA373100F63BEB /* Main.storyboard */,
+				FBCF640827CE1A4400F63BEB /* RecordViewController.swift */,
+				FBCF640027CA3CB500F63BEB /* Game.swift */,
+				FBCF63FC27CA388900F63BEB /* GameViewController.swift */,
+				FBCF640227CCFAEE00F63BEB /* SelectTimeViewController.swift */,
+				FBCF640627CD075900F63BEB /* Settings.swift */,
+				FBCF640427CCFB1300F63BEB /* SettingsTableViewController.swift */,
 				FBCF63CA27CA36EF00F63BEB /* AppDelegate.swift */,
 				FBCF63CC27CA36EF00F63BEB /* SceneDelegate.swift */,
-				FBCF63FA27CA373100F63BEB /* Main.storyboard */,
-				FBCF640027CA3CB500F63BEB /* Game.swift */,
 				FBCF63D327CA36F000F63BEB /* Assets.xcassets */,
 				FBCF63D527CA36F000F63BEB /* LaunchScreen.storyboard */,
 				FBCF63D827CA36F000F63BEB /* Info.plist */,
-				FBCF63FC27CA388900F63BEB /* GameViewController.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -262,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCF63CB27CA36EF00F63BEB /* AppDelegate.swift in Sources */,
+				FBCF640327CCFAEE00F63BEB /* SelectTimeViewController.swift in Sources */,
+				FBCF640527CCFB1300F63BEB /* SettingsTableViewController.swift in Sources */,
+				FBCF640927CE1A4400F63BEB /* RecordViewController.swift in Sources */,
 				FBCF63FD27CA388900F63BEB /* GameViewController.swift in Sources */,
+				FBCF640727CD075900F63BEB /* Settings.swift in Sources */,
 				FBCF63CD27CA36EF00F63BEB /* SceneDelegate.swift in Sources */,
 				FBCF640127CA3CB500F63BEB /* Game.swift in Sources */,
 			);

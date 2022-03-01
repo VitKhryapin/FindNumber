@@ -26,9 +26,18 @@ class Game {
     var items:[Item] = []
     private var countItems:Int
     var nexItem: Item?
+    var isNewRecord = false
     var status: StatusGame = .start {
         didSet{
             if status != .start{
+                if status == .win {
+                    let newRecord = timeForGame - secondsGame
+                    let record = UserDefaults.standard.integer(forKey: KeysUserDefaults.recordGame)
+                    if record == 0 || newRecord < record {
+                        UserDefaults.standard.setValue(newRecord, forKey: KeysUserDefaults.recordGame)
+                        isNewRecord = true
+                    }
+                }
                 stopGame()
             }
         }
@@ -45,15 +54,16 @@ class Game {
     private var timer:Timer?
     private var updateTimer:((StatusGame, Int)->Void)
     
-    init(countItems:Int, time: Int, updateTimer:@escaping (_ status:StatusGame, _ seconds:Int) -> Void) {
+    init(countItems:Int, updateTimer:@escaping (_ status:StatusGame, _ seconds:Int) -> Void) {
         self.countItems = countItems
-        self.timeForGame = time
-        self.secondsGame = time
+        self.timeForGame = Settings.shared.currentSettings.timeForGame
+        self.secondsGame = self.timeForGame
         self.updateTimer = updateTimer
         setupGame()
     }
     
     private func setupGame() {
+        isNewRecord = false
         var digits = data.shuffled()
         items.removeAll()
         while items.count < countItems {
@@ -62,9 +72,12 @@ class Game {
         }
         nexItem = items.shuffled().first
         updateTimer(status, secondsGame)
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
-            self?.secondsGame -= 1
-        })
+        
+        if Settings.shared.currentSettings.timerState {
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
+                self?.secondsGame -= 1
+            })
+        }
     }
     
     func check (index: Int) {
@@ -82,7 +95,7 @@ class Game {
         }
     }
     
-    private func stopGame() {
+    func stopGame() {
         timer?.invalidate()
     }
     
